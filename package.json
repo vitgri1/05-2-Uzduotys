@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "var-oper": "nodemon ./js/02-var-oper.js",
     "var-init": "nodemon ./js/01-var-init.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
