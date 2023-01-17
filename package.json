@@ -1,0 +1,16 @@
+{
+  "name": "05-2-uzduotys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "var-init": "nodemon ./js/01-var-init.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vitalijus (https://github.com/vitgri1)",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
