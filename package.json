@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "for-loops": "nodemon ./js/03-for-loops.js",
     "compare": "nodemon ./js/02-compare.js",
     "var-init": "nodemon ./js/01-var-init.js",
     "test": "echo \"Error: no test specified\" && exit 1"
