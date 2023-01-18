@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "function": "nodemon ./js/04-function.js",
     "for-loops": "nodemon ./js/03-for-loops.js",
     "compare": "nodemon ./js/02-compare.js",
     "var-init": "nodemon ./js/01-var-init.js",
