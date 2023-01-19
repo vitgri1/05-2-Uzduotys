@@ -104,9 +104,9 @@ console.log('---------6----------');
 function dalyba(dalinys, daliklis) {
     if (typeof dalinys !== 'number' || typeof daliklis !== 'number') {
         return 'Abu kintamieji turi buti skaiciai.'
-    } else if (dalinys === NaN || daliklis === NaN) {
+    } else if (isNaN(dalinys) || isNaN(daliklis)) {
         return 'Kintamieji negali buti NaN.';
-    } else if ((dalinys === Infinity && daliklis === Infinity) || (dalinys === -Infinity && daliklis === -Infinity) || (dalinys === Infinity && daliklis === -Infinity) || (dalinys === -Infinity && daliklis === Infinity)) {
+    } else if (!isFinite(dalinys) && !isFinite(daliklis)) {
         return 'Abu kintamieji negali buti Infinity vienu metu';
     } else {
         const dalmuo = dalinys / daliklis;
@@ -120,7 +120,7 @@ console.log( dalyba( 4, 'agwa' ) );
 console.log( dalyba( '8', '5') );
 console.log( dalyba( 0, 2 ) );
 console.log( dalyba( 70, 0) );
-console.log( dalyba( Infinity, 2 ) );
+console.log( dalyba( NaN, 2 ) );
 console.log( dalyba( 5, Infinity) );
 console.log( dalyba( -Infinity, Infinity) );
 console.log( dalyba( 1561, 2 ) );
